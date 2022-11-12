@@ -3,7 +3,6 @@ import requests, openpyxl
 excel=openpyxl.Workbook()
 sheet=excel.active
 sheet.title ="Top Rated Movies"
-print(excel.sheetnames)
 sheet.append(["Movie Rank","Movie Name","Year of Release","IMDb Rating"])
 source =requests.get("https://www.imdb.com/chart/top/")
 soup = BeautifulSoup(source.text,"html.parser")
