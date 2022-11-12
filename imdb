@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import requests, openpyxl
 excel=openpyxl.Workbook()
-print(excel.sheetnames)
 sheet=excel.active
 sheet.title ="Top Rated Movies"
 print(excel.sheetnames)
